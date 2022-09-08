@@ -1,38 +1,41 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "farmersdream",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Farmers Dream",
+  "description": "An addon for Farmers Delight to enhance your farming needs",
   "authors": [
-    "Me!"
+    "JoostMSoftware"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT License",
+  "icon": "assets/farmersdream/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.joostmsoftware.farmersdream.FarmersDream"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "farmersdream.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
     "minecraft": "~1.19",
-    "java": ">=17"
+    "java": ">=17",
+    "farmersdelight": "*"
   },
-  "suggests": {
-    "another-mod": "*"
+  "custom": {
+    "modmenu": {
+      "parent": "farmersdelight"
+    }
   }
 }
