@@ -9,5 +9,6 @@ public class FarmersDreamClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(FarmersDreamBlocks.PINEAPPLE_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FarmersDreamBlocks.CORN_CROP, RenderLayer.getCutout());
     }
 }
