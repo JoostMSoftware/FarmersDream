@@ -1,9 +1,9 @@
-# Fabric Example Mod
+# Farmer's Dream
+An addon for Farmer's Delight to enhance your farming needs 
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## Planning
+A fermenting station to ferment everything from FD and FD into bio fuel to power a bio fuel generator, which makes power. 
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Farmer's Dream is under the MIT License, please check our License file for more info!

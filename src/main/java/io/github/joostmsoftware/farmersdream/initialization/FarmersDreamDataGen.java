@@ -1,4 +1,4 @@
-package io.github.joostmsoftware.farmersdream.initialisation;
+package io.github.joostmsoftware.farmersdream.initialization;
 
 import io.github.joostmsoftware.farmersdream.block.custom.CornCropBlock;
 import io.github.joostmsoftware.farmersdream.block.custom.PineappleCropBlock;
