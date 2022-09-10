@@ -20,6 +20,12 @@
   "entrypoints": {
     "main": [
       "io.github.joostmsoftware.farmersdream.FarmersDream"
+    ],
+    "client": [
+      "io.github.joostmsoftware.farmersdream.client.FarmersDreamClient"
+    ],
+    "fabric-datagen": [
+      "io.github.joostmsoftware.farmersdream.initialisation.FarmersDreamDataGen"
     ]
   },
   "mixins": [

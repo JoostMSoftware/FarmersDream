@@ -1,0 +1,11 @@
+{
+  "item.farmersdream.corn": "Corn",
+  "item.farmersdream.corn_seeds": "Corn Seeds",
+  "item.farmersdream.pineapple": "Pineapple",
+  "item.farmersdream.pineapple_seeds": "Pineapple Seeds",
+
+  "block.farmersdream.pineapple_crop": "Pineapple Crop",
+  "block.farmersdream.corn_crop": "Corn Crop",
+
+  "itemGroup.farmersdream.group": "Farmers Dream"
+}
