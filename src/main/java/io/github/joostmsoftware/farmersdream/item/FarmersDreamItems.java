@@ -14,10 +14,10 @@ import static io.github.joostmsoftware.farmersdream.block.FarmersDreamBlocks.PIN
 
 public class FarmersDreamItems {
     public static final Item CORN_SEEDS = registerItem("corn_seeds", new AliasedBlockItem(CORN_CROP, new FabricItemSettings().group(GROUP)));
-    public static final Item CORN = registerItem("corn", new Item(new FabricItemSettings().group(GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(1).build())));
+    public static final Item CORN = registerItem("corn", new Item(new FabricItemSettings().group(GROUP).food(new FoodComponent.Builder().hunger(4).saturationModifier(1.0f).build())));
 
     public static final Item PINEAPPLE_SEEDS = registerItem("pineapple_seeds", new AliasedBlockItem(PINEAPPLE_CROP, new FabricItemSettings().group(GROUP)));
-    public static final Item PINEAPPLE = registerItem("pineapple", new Item(new FabricItemSettings().group(GROUP).food(new FoodComponent.Builder().hunger(4).saturationModifier(4).build())));
+    public static final Item PINEAPPLE = registerItem("pineapple", new Item(new FabricItemSettings().group(GROUP).food(new FoodComponent.Builder().hunger(8).saturationModifier(0.6f).build())));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), item);

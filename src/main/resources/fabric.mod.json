@@ -3,7 +3,7 @@
   "id": "farmersdream",
   "version": "${version}",
 
-  "name": "Farmers Dream",
+  "name": "Farmer's Dream",
   "description": "An addon for Farmers Delight to enhance your farming needs",
   "authors": [
     "JoostMSoftware"
@@ -25,7 +25,10 @@
       "io.github.joostmsoftware.farmersdream.client.FarmersDreamClient"
     ],
     "fabric-datagen": [
-      "io.github.joostmsoftware.farmersdream.initialisation.FarmersDreamDataGen"
+      "io.github.joostmsoftware.farmersdream.initialization.FarmersDreamDataGen"
+    ],
+    "emi": [
+      "io.github.joostmsoftware.farmersdream.initialization.plugins.emi.FarmersDreamEmiPlugin"
     ]
   },
   "mixins": [
