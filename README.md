@@ -16,4 +16,4 @@ An addon for Farmer's Delight to enhance your farming needs.
 
 ## License
 
-Farmer's Dream is under the MIT License, please check our License file for more info
+Farmer's Dream is under the [MIT](https://github.com/JoostMSoftware/FarmersDream/blob/1.19/LICENSE) License, please check our License file for more info
