@@ -16,6 +16,7 @@ import net.minecraft.data.client.Models;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.predicate.StatePredicate;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import static io.github.joostmsoftware.farmersdream.block.FarmersDreamBlocks.*;
 import static io.github.joostmsoftware.farmersdream.item.FarmersDreamItems.*;
@@ -70,7 +71,32 @@ public class FarmersDreamDataGen implements DataGeneratorEntrypoint {
 
         @Override
         protected void generateTags() {
-            getOrCreateTagBuilder(FarmersDreamTags.BIO_FUEL_FLUID);
+            getOrCreateTagBuilder(FarmersDreamTags.BIO_FLUID).add(FarmersDreamFluids.STILL_BIO_FLUID);
+            getOrCreateTagBuilder(FarmersDreamTags.COMMON_BIO_FLUID).add(FarmersDreamFluids.STILL_BIO_FLUID);
+        }
+    }
+
+    private static class FarmersDreamItemTagProvider extends FabricTagProvider.ItemTagProvider {
+
+        public FarmersDreamItemTagProvider(FabricDataGenerator dataGenerator, @Nullable BlockTagProvider blockTagProvider) {
+            super(dataGenerator, blockTagProvider);
+        }
+
+        @Override
+        protected void generateTags() {
+
+        }
+    }
+
+    private static class FarmersDreamBlockTagProvider extends FabricTagProvider.BlockTagProvider {
+
+        public FarmersDreamBlockTagProvider(FabricDataGenerator dataGenerator) {
+            super(dataGenerator);
+        }
+
+        @Override
+        protected void generateTags() {
+
         }
     }
 
@@ -79,5 +105,8 @@ public class FarmersDreamDataGen implements DataGeneratorEntrypoint {
         fabricDataGenerator.addProvider(FarmersDreamLootTableProvider::new);
         fabricDataGenerator.addProvider(FarmersDreamModelGenerator::new);
         fabricDataGenerator.addProvider(FarmersDreamFluidTagProvider::new);
+        FarmersDreamBlockTagProvider blockTagProvider = fabricDataGenerator.addProvider(FarmersDreamBlockTagProvider::new);
+        fabricDataGenerator.addProvider(new FarmersDreamItemTagProvider(fabricDataGenerator, blockTagProvider));
+
     }
 }

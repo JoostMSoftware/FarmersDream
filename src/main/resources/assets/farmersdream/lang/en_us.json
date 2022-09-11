@@ -12,7 +12,11 @@
   "block.farmersdream.granola_crop": "Granola Crop",
   "block.farmersdream.bio_fluid_block": "Bio Fluid",
 
-  "tags.farmersdream.fluids.bio_fluid": "Bio Fluid",
+  "tag.farmersdream.fluids.bio_fluid": "Bio Fluid",
+
+
+  "tag.c.fluids.bio_fluid": "Bio Fluid",
+
 
   "itemGroup.farmersdream.group": "Farmers Dream"
 }
