@@ -4,6 +4,8 @@ An addon for Farmer's Delight to enhance your farming needs.
 
 ## Features
 
+### Current features
+
 * new crops & seeds
 * new food recipes
 
@@ -17,3 +19,4 @@ An addon for Farmer's Delight to enhance your farming needs.
 ## License
 
 Farmer's Dream is under the [MIT](https://github.com/JoostMSoftware/FarmersDream/blob/1.19/LICENSE) License, please check our License file for more info
+

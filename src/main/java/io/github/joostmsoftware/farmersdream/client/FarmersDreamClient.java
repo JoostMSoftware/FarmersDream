@@ -14,6 +14,7 @@ public class FarmersDreamClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(FarmersDreamBlocks.PINEAPPLE_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(FarmersDreamBlocks.CORN_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FarmersDreamBlocks.GRANOLA_CROP, RenderLayer.getCutout());
 
         FluidRenderHandlerRegistry.INSTANCE.register(FarmersDreamFluids.STILL_BIO_FLUID, FarmersDreamFluids.FLOWING_BIO_FLUID,
                 new SimpleFluidRenderHandler(
