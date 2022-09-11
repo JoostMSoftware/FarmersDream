@@ -10,6 +10,9 @@
   "block.farmersdream.pineapple_crop": "Pineapple Crop",
   "block.farmersdream.corn_crop": "Corn Crop",
   "block.farmersdream.granola_crop": "Granola Crop",
+  "block.farmersdream.bio_fluid_block": "Bio Fluid",
+
+  "tags.farmersdream.fluids.bio_fluid": "Bio Fluid",
 
   "itemGroup.farmersdream.group": "Farmers Dream"
 }

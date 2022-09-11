@@ -4,10 +4,12 @@ import io.github.joostmsoftware.farmersdream.block.custom.CornCropBlock;
 import io.github.joostmsoftware.farmersdream.block.custom.GranolaCropBlock;
 import io.github.joostmsoftware.farmersdream.block.custom.PineappleCropBlock;
 import io.github.joostmsoftware.farmersdream.fluid.FarmersDreamFluids;
+import io.github.joostmsoftware.farmersdream.util.FarmersDreamTags;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -31,8 +33,8 @@ public class FarmersDreamDataGen implements DataGeneratorEntrypoint {
             blockStateModelGenerator.registerCrop(PINEAPPLE_CROP, PineappleCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
             blockStateModelGenerator.registerCrop(CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
             blockStateModelGenerator.registerCrop(GRANOLA_CROP, GranolaCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
-
-            blockStateModelGenerator.excludeFromSimpleItemModelGeneration(FarmersDreamFluids.BIO_FUEL_BLOCK);
+            blockStateModelGenerator.registerSimpleState(FarmersDreamFluids.BIO_FUEL_BLOCK);
+            blockStateModelGenerator.registerItemModel(FarmersDreamFluids.BIO_FUEL_BLOCK);
         }
 
         @Override
@@ -60,9 +62,22 @@ public class FarmersDreamDataGen implements DataGeneratorEntrypoint {
         }
     }
 
+    private static class FarmersDreamFluidTagProvider extends FabricTagProvider.FluidTagProvider {
+
+        public FarmersDreamFluidTagProvider(FabricDataGenerator dataGenerator) {
+            super(dataGenerator);
+        }
+
+        @Override
+        protected void generateTags() {
+            getOrCreateTagBuilder(FarmersDreamTags.BIO_FUEL_FLUID);
+        }
+    }
+
     @Override
     public void onInitializeDataGenerator(@NotNull FabricDataGenerator fabricDataGenerator) {
         fabricDataGenerator.addProvider(FarmersDreamLootTableProvider::new);
         fabricDataGenerator.addProvider(FarmersDreamModelGenerator::new);
+        fabricDataGenerator.addProvider(FarmersDreamFluidTagProvider::new);
     }
 }
