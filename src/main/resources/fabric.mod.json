@@ -10,7 +10,8 @@
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/JoostMSoftware/FarmersDream",
+    "issues": "https://github.com/JoostMSoftware/FarmersDream/issues"
   },
 
   "license": "MIT License",

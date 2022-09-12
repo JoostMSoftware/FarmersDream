@@ -44,6 +44,11 @@ dependencies {
 
 	// Emi
 	modImplementation "dev.emi:emi:${project.emi_version}"
+
+	// Tech reborn's Energy API
+	include modApi("teamreborn:energy:${project.energyApi_version}") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
 }
 
 processResources {
