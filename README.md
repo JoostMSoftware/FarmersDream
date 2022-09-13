@@ -1,9 +1,22 @@
-# Fabric Example Mod
+# Farmer's Dream
 
-## Setup
+An addon for Farmer's Delight to enhance your farming needs.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## Features
+
+### Current features
+
+* new crops & seeds
+* new food recipes
+
+### Planned Features
+
+* new crops, seeds and food recipes
+* Fermenting station
+* A way to make Farmer's Delight crops and Farmer's Dream crops work with the fermenting station
+* Bio fuel generator
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Farmer's Dream is under the [MIT](https://github.com/JoostMSoftware/FarmersDream/blob/1.19/LICENSE) License, please check our License file for more info
+

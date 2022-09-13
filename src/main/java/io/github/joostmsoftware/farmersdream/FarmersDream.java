@@ -1,7 +1,9 @@
 package io.github.joostmsoftware.farmersdream;
 
 import io.github.joostmsoftware.farmersdream.block.FarmersDreamBlocks;
+import io.github.joostmsoftware.farmersdream.fluid.FarmersDreamFluids;
 import io.github.joostmsoftware.farmersdream.item.FarmersDreamItems;
+import io.github.joostmsoftware.farmersdream.util.FarmersDreamTags;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -28,6 +30,9 @@ public class FarmersDream implements ModInitializer {
 
 		FarmersDreamItems.register();
 		FarmersDreamBlocks.register();
+		FarmersDreamFluids.register();
+
+		FarmersDreamTags.registerTags();
 
 		LOGGER.info("Hello Fabric world!");
 	}

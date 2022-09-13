@@ -1,11 +1,24 @@
 {
   "item.farmersdream.corn": "Corn",
   "item.farmersdream.corn_seeds": "Corn Seeds",
+  "item.farmersdream.granola": "Granola",
+  "item.farmersdream.granola_seeds": "Granola Seeds",
   "item.farmersdream.pineapple": "Pineapple",
   "item.farmersdream.pineapple_seeds": "Pineapple Seeds",
+  "item.farmersdream.bio_fluid_bucket": "Bio Fluid Bucket",
 
   "block.farmersdream.pineapple_crop": "Pineapple Crop",
   "block.farmersdream.corn_crop": "Corn Crop",
+  "block.farmersdream.granola_crop": "Granola Crop",
+  "block.farmersdream.bio_fluid_block": "Bio Fluid",
 
-  "itemGroup.farmersdream.group": "Farmers Dream"
+  "tag.farmersdream.fluids.bio_fluid": "Bio Fluid",
+
+
+  "tag.c.fluids.bio_fluid": "Bio Fluid",
+  "tag.c.crops.corn": "Corn",
+  "tag.c.crops.granola": "Granola",
+  "tag.c.crops.pineapple": "Pineapple",
+
+  "itemGroup.farmersdream.group": "Farmer's Dream"
 }
