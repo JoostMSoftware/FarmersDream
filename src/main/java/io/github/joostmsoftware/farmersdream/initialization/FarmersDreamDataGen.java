@@ -84,7 +84,9 @@ public class FarmersDreamDataGen implements DataGeneratorEntrypoint {
 
         @Override
         protected void generateTags() {
-
+            getOrCreateTagBuilder(FarmersDreamTags.COMMON_CORN_CROP).add(CORN);
+            getOrCreateTagBuilder(FarmersDreamTags.COMMON_GRANOLA_CROP).add(GRANOLA);
+            getOrCreateTagBuilder(FarmersDreamTags.COMMON_PINEAPPLE_CROP).add(PINEAPPLE);
         }
     }
 

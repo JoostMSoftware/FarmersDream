@@ -16,7 +16,9 @@
 
 
   "tag.c.fluids.bio_fluid": "Bio Fluid",
+  "tag.c.crops.corn": "Corn",
+  "tag.c.crops.granola": "Granola",
+  "tag.c.crops.pineapple": "Pineapple",
 
-
-  "itemGroup.farmersdream.group": "Farmers Dream"
+  "itemGroup.farmersdream.group": "Farmer's Dream"
 }
